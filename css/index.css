@@ -56,34 +56,83 @@
     margin-top: 15px;
 }
 
+.scrollimg{
+    position: relative;
+}
+
+.leftarrow{
+    background-image: url(../img/prev.png);
+    width: 37px;
+    height: 78px;
+    position: absolute;
+    left: 200px;
+    top: 150px;
+    cursor: pointer;
+}
+.rightarrow{
+    background-image: url(../img/next.png);
+    width: 37px;
+    height: 78px;
+    position: absolute;
+    right: 200px;
+    top: 150px;
+    cursor: pointer;
+}
+
 .scrollimg>h2{
     margin: 10px 0 10px 260px;
 }
-.scollimg_container{
+.scrollimg_container{
     height: 300px;
     width: 1000px;
     margin: 0 auto;
-    border: 1px solid red;
+/*     border: 1px solid red; */
+    position: relative;
+    overflow: hidden;
 }
-.scoll_element{
+.scrollimg_thing{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    position: absolute;
+}
+.scrollimg_thing li{
+    display: flex;
+    align-items: center;
+}
+.scroll_element{
     width: 220px;
     text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    margin: 5px 14px;
 }
-.scoll_element h2{
+.scroll_element h2{
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 550;
     text-align: center;
+    margin-top: 10px;
 }
-.scoll_element span{
+.scroll_element span{
     display: inline-block;
     width: 50px;
     height: 25px;
-    margin: 5px 10px;
+    margin: 5px 8px;
     border: 1px solid red;
     border-radius: 5px;
     font-size: 12px;
     line-height: 25px;
     color: red;
-    
-    
+}
+.scroll_element h3{
+    font-size: 17px;
+    font-weight: 500;
+    margin: 3px 0;
+}
+.scroll_element h4{
+    margin: 3px 0;
+    font-size: 15px;
+    font-weight: 400;
 }
