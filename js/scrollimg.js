@@ -15,7 +15,6 @@ window.addEventListener('load', function () {
     rightbutton.addEventListener('click', function () {
         if (flag) {
             /* 关闭阀门 */
-
             flag = false;
             /* 判断是否为最后一张图，若为最后一张图迅速移动到第一张图并清零count值 */
             if (count == ul.children.length - 1) {
@@ -28,7 +27,6 @@ window.addEventListener('load', function () {
                 /* 利用回调函数开启阀门继续下一个动画效果 */
                 flag = true;
             });
-
         }
 
     })
