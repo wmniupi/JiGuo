@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    text-align: center;
+    width: 1000px;
+    height: 1600px;
+    margin: 0 auto;
+    margin-top: 100px;
+    position: relative;
+}
+
+h1 {
+    width: 100%;
+    font-size: 40px;
+    font-weight: 500;
+    margin: 30px auto;
+}
+
+nav {
+    width: 50%;
+    height: 40px;
+    margin: 0 auto;
+}
+
+nav span {
+    display: inline-block;
+    width: 30%;
+    height: 100%;
+    font-size: 20px;
+    color: rgb(163, 163, 163);
+}
+
+.opt {
+    color: red;
+    border-bottom: 3px solid red;
+}
+
+aside {
+    width: 70%;
+    margin: 20px auto;
+}
+
+aside span {
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+    font-size: 20px;
+    color: rgb(163, 163, 163);
+}
+
+.box ul {
+    width: 100%;
+    height: 1300px;
+    background-color: rgb(247, 247, 247);
+    margin-bottom: 20px;
+}
+
+.box ul li {
+    width: 23%;
+    height: 290px;
+    background-color: rgb(255, 255, 255);
+    margin: 10px 10px;
+    margin-top: 20px;
+    float: left;
+    list-style: none;
+    text-align: center;
+    position: relative;
+}
+
+.box>ul>li>img {
+    width: 100%;
+    height: 130px;
+}
+
+@keyframes mack {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.box>ul>li:hover>img {
+    animation: mack 1.5s linear 0s infinite both;
+}
+
+.starting {
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 25px;
+    right: 0;
+    text-align: center;
+    line-height: 25px;
+    color: rgb(245, 232, 232);
+    background-color: rgb(254, 83, 65);
+    font-size: 10px;
+    z-index: 1;
+}
+
+.box>ul>li>h3 {
+    margin-top: 5px;
+    /* font-size: 20px; */
+    height: 50px;
+    overflow: hidden;
+}
+
+.box>ul>li>p {
+    margin-top: 5px;
+}
+
+.box>ul>li>p>.rim_b {
+    width: 40px;
+    height: 25px;
+    font-size: 10px;
+    line-height: 25px;
+    display: inline-block;
+    border: 1px solid rgb(163, 163, 163);
+    margin: 5px 6px;
+}
+
+.box>ul>li>h4 {
+    font-weight: 100;
+    margin-top: 5px;
+}
+
+.box>ul>li>h4>.colour {
+    color: red;
+}
+
+.box>ul>li>h5 {
+    font-weight: 100;
+    color: rgb(163, 163, 163);
+    margin: 5px;
+}
+
+.exclusive {
+    position: absolute;
+    display: block;
+    width: 70px;
+    height: 25px;
+    right: 0;
+    text-align: center;
+    line-height: 25px;
+    color: rgb(196, 169, 106);
+    background-color: rgb(251, 244, 203);
+    font-size: 10px;
+    z-index: 1;
+}
+
+.box>ul>li>p>.rim_g {
+    width: 40px;
+    height: 25px;
+    font-size: 10px;
+    line-height: 25px;
+    display: inline-block;
+    border: 1px solid green;
+    margin: 5px 6px;
+    color: green;
+}
+
+.box>ul>li>.examine_g {
+    font-weight: 100;
+    color: rgb(128, 194, 105);
+}
