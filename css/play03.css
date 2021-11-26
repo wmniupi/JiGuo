@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    text-align: center;
+    width: 1000px;
+    height: 150px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+h1 {
+    width: 100%;
+    font-size: 40px;
+    font-weight: 500;
+    margin: 30px auto;
+}
+
+nav {
+    width: 50%;
+    height: 40px;
+    margin: 0 auto;
+}
+
+nav span {
+    display: inline-block;
+    width: 30%;
+    height: 100%;
+    font-size: 20px;
+    color: rgb(163, 163, 163);
+}
+
+.opt {
+    color: red;
+    border-bottom: 3px solid red;
+}
+
+.middle {
+    width: 100%;
+    height: 1500px;
+    background-color: rgb(247, 247, 247);
+    overflow: auto;
+    list-style: none;
+}
+
+.middle li {
+    width: 1000px;
+    height: 550px;
+    margin: 20px auto;
+    background-color: rgb(255, 255, 255);
+}
+
+.middle li span {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(246, 246, 246);
+    border: 1px solid rgb(246, 246, 246);
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+ul>li>div {
+    margin: 20px 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+.middle li div:hover {
+    color: red;
+}
+
+.middle li p {
+    border-left: 5px solid red;
+    text-indent: 2em;
+    font-size: 18px;
+}
+
+.base {
+    width: 100%;
+    height: 150px;
+    margin-left: 0;
+    border-top: 1px solid rgb(163, 163, 163);
+}
+
+.base ol {
+    width: 13%;
+    height: 100%;
+    /* margin: 10px 10px; */
+    margin-top: 20px;
+    margin-left: 20px;
+    float: left;
+    font-weight: 100;
+    font-size: 16px;
+    text-align: center;
+}
+
+.base ol li {
+    width: 100%;
+    height: 30%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.base ol li:hover {
+    color: red;
+}
+
+.middle>li:nth-of-type(2) {
+    width: 1000px;
+    height: 250px;
+    margin: 20px auto;
+    background-color: rgb(255, 255, 255);
+}
+
+.middle h3 i {
+    font-style: normal;
+    font-weight: 100;
+    display: inline-block;
+    margin: 10px 30px;
+    font-size: 16px;
+}
+
+.middle h3 i:hover {
+    color: red;
+}
+
+.middle h3 {
+    border-top: 1px solid rgb(163, 163, 163);
+}
+
+.middle>li:nth-of-type(3) {
+    width: 1000px;
+    height: 250px;
+    margin: 20px auto;
+    background-color: rgb(255, 255, 255);
+}
+
+.middle>li:nth-of-type(4) {
+    width: 1000px;
+    height: 250px;
+    margin: 20px auto;
+    background-color: rgb(255, 255, 255);
+}

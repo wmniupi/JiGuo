@@ -7,13 +7,13 @@ window.addEventListener('load',function(){
     const more_ = document.querySelector('#more');
     // console.log(more_);
     more_.children[0].addEventListener('click',function(){
-        this.innerHTML = '<img src="../../img/loading-icon.gif"/>&nbsp;&nbsp;正在加载中';
+        this.innerHTML = '<img src="../img/loading-icon.gif"/>&nbsp;&nbsp;正在加载中';
     });
     // 最新和最热的切换
     const btn_new = document.getElementById('btn_new');
     const btn_hot = document.getElementById('btn_hot');
     btn_new.addEventListener('click',function(){
-        this.className = 'nav';
+        this.className = 'n';
         btn_hot.className = '';
         let ajax_ = new XMLHttpRequest() || new ActiveXObject('Microsoft.XMLHTTP');
         ajax_.open('get','http://192.168.31.5:3000/guid/new',true);
@@ -29,7 +29,7 @@ window.addEventListener('load',function(){
         }
     });
     btn_hot.addEventListener('click',function(){
-        this.className = 'nav';
+        this.className = 'n';
         btn_new.className = '';
         let ajax_ = new XMLHttpRequest() || new ActiveXObject('Microsoft.XMLHTTP');
         ajax_.open('get','http://192.168.31.5:3000/guid/hot',true);
@@ -55,8 +55,8 @@ window.addEventListener('load',function(){
             str += '<img src="'+i.img+'"/>';
             str += '<span>'+i.text+'</span>';
             str += '<div>';
-            str += '<span><img src="../../img/xin.png" alt="">'+i.like+'</span>';
-            str += '<span><img src="../../img/reply.png" alt="">'+i.words+'</span>';
+            str += '<span><img src="../img/xin.png" alt="">'+i.like+'</span>';
+            str += '<span><img src="../img/reply.png" alt="">'+i.words+'</span>';
             str += '</div></div></li>';
         }
         const ul =  document.getElementById('show_ul');

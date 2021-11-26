@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>体验报告</title>
     <link rel="stylesheet" href="../css/header&footer.css">
-    <link rel="stylesheet" href="../css/register.css">
-    <script src="../js/register.js"></script>
-    <script src="../js/redirect.js"></script>
+    <link rel="stylesheet" href="../../css/report_index.css">
 </head>
-
+<script src="../js/report_index.js"></script>
+<script src="../js/redirect.js"></script>
 <body>
     <header>
         <div class="nav_container">
@@ -27,40 +25,55 @@
             <button class="registerbtn">注册</button>
         </div>
     </header>
-    <article>
-        <div class="register_container">
-            <h2>注册极果</h2>
-            <div class="imformation">
-                <input type="text" id="phone_number" placeholder="请输入登陆手机号"><br>
-                <input type="text" id="check_code" placeholder="请输入4位数字验证码">
-                <button id='postcodebtn'>获取验证码</button>
-                <br>
-                <input type="text" id="identifying_code" placeholder="请输入图片验证码">
-                <img src="../img/imgCode.jpg" class="imgCode">
-                <br>
-                <input type="text" id="username" placeholder="请输入用户名"><br>
-                <input type="password" id="password" placeholder="请输入密码"><br>
-                <input type="password" id="confirmpwd" placeholder="请输入确认密码"><br>
-                <button id="registerbtn">立即注册</button>
+    <main>
+        <div id="header">
+            <p>体验报告</p>
+            <p><span id="btn_new">最新</span>
+                <span id="btn_hot">最热</span></p>
+        </div>
+        <div class="wrap">
+            <div id="left">
+                <ul id="show_ul">
+                    <li>
+                        <div>
+                            <img src="http://192.168.31.5:3000/img/hot3.jpg" alt="">
+                            <div>
+                                Liquid Image 338 运动摄像眼镜
+                                <span><img src="../img/tx.jpg" alt="">2016-01-25</span>
+                                <span><img src="../img/zan.png" alt="">3
+                                <img src="../img/reply.png" alt="">3</span>
+                            </div>
+                        </div>
+                        <div>
+                            关于此产品还有30篇报告，点击查看
+                        </div>
+                    </li>
+                </ul>
+                <div id="more">
+                    <span>
+                        <img src="../img/more.png" alt="">&nbsp;&nbsp;点击加载更多
+                    </span>
+                </div>
             </div>
-            <div class="error_container">
-                <p class="p1">输入手机号码格式有误</p>
-                <p class="p2">数字验证码错误</p>
-                <p class="p3">图片验证码错误</p>
-                <p class="p4">用户名格式错误</p>
-                <p class="p5">密码格式错误</p>
-                <p class="p6">确认密码与密码不相同</p>
+            <div id="right">
+                    <p class="title">极果体验师</p>
+                    <img src="../img/tiyanImg.jpg" alt="">
+                    <dl>
+                        <dt>福利</dt>
+                        <dd>第一时间体验新品，大众试用优先通过，还有定向邀请试用，新品玩到手软！</dd>
+                        <dt>要求</dt>
+                        <dd>是某个领域的大神级玩家，在社交网络或圈子里有大影响力，善写作会拍摄。</dd>
+                        <dt>申请</dt>
+                        <dd>1. 关注极果公众号：jguojguo<br>
+                            （或扫描下方二维码）<br>
+                            2. 在公众号内回复：体验师</dd>
+                    </dl>
+                    <p class="title">关注我们</p>
+                    <img src="../img/myCode.jpg" alt="">
             </div>
         </div>
-        <div class="mask">
-            <div class="tips">
-                <h1>注册成功</h1>
-                <p>恭喜您注册成功！是否要去登录？</p>
-                <button class="gotologinbtn">去登录</button>
-                <button class="gotoindexbtn">去首页</button>
-            </div>
-        </div>
-    </article>
+        <div class="clearbox"></div>
+    </main>
     <footer>
         <div class="list_container">
             <dl><img src="../img/code.png" width="160" height="160" /></dl>
@@ -104,5 +117,4 @@
         <p>© 2016 极果版权所有</p>
     </footer>
 </body>
-
 </html>
