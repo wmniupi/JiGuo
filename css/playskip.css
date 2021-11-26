@@ -1,0 +1,393 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* .box {
+    height: 1200px;
+} */
+
+.focusimg {
+    margin-top: 70px;
+    height: 300px;
+    background-image: url(../img/original.jpg);
+    background-size: cover;
+    background-position: -200px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.font_container {
+    position: absolute;
+    top: 40px;
+    right: 260px;
+    text-align: right;
+
+    animation: focusfont 1s forwards;
+}
+
+@keyframes focusfont {
+    from {
+        transform: translate(500px, -500px);
+    }
+
+    to {
+        transform: translate(0, 0);
+    }
+}
+
+.font_container h2 {
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.font_container span {
+    padding: 5px 10px;
+    margin: 10px 6px;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 32px;
+    display: inline-block;
+    background-color: rgba(248, 248, 248, 0.3);
+}
+
+.font_container p {
+    font-size: 20px;
+}
+
+.font_container button {
+    width: 250px;
+    height: 50px;
+    background-color: #fe5341;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    border: 0;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(240, 240, 240);
+}
+
+nav ul {
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    overflow: auto;
+    list-style: none;
+}
+
+nav ul h2 {
+    display: block;
+    font-size: 23px;
+    width: 50px;
+    height: 80%;
+    font-weight: 400;
+    margin-top: 7px;
+    border-left: 5px solid rgb(254, 83, 65);
+    padding-left: 8px;
+    float: left;
+}
+
+nav ul li {
+    width: 15%;
+    float: left;
+    text-align: center;
+    margin: 0 5px;
+}
+
+nav ul li img {
+    margin-top: 10px;
+}
+
+nav ul li span {
+    display: block;
+    font-size: 14px;
+}
+
+.middle {
+    width: 1000px;
+    height: 1900px;
+    margin: 0 auto;
+}
+
+#right {
+    width: 300px;
+    height: 500px;
+    float: left;
+    margin-left: 20px;
+}
+
+#right .title {
+    margin: 10px 0px 20px 0px;
+    padding-left: 30px;
+    font-size: 18px;
+    border-left: 5px solid #fe5431;
+}
+
+#right>dl {
+    margin: 10px 0px 80px 0px;
+    color: #ababab;
+    font-size: 14px;
+}
+
+#right>dl>dt {
+    margin: 10px 0px;
+    color: black;
+    font-weight: 900;
+    font-size: 16px;
+}
+
+#right .righttop {
+    width: 100%;
+}
+
+.price {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 40px;
+    color: red;
+}
+
+.middle button {
+    display: block;
+    width: 90%;
+    height: 50px;
+    background-color: rgb(254, 83, 65);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+aside {
+    width: 65%;
+    height: 100%;
+    float: left;
+    /* background-color: skyblue; */
+}
+
+aside h2 {
+    font-weight: 400;
+    font-size: 20px;
+    text-indent: 10px;
+    margin: 10px 0 10px 0;
+    border-left: 8px solid #fe5431;
+}
+
+aside h5 {
+    color: rgb(254, 83, 65);
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px 0 15px 0;
+}
+
+aside h6 {
+    font-size: 14px;
+    font-weight: 100;
+    margin: 20px 0 15px 0;
+}
+
+aside img {
+    width: 80%;
+    display: block;
+    margin: 20px auto;
+}
+
+aside h4 {
+    color: rgb(0, 112, 192);
+    margin: 20px 0 15px 0;
+    font-weight: 600;
+}
+
+aside span {
+    color: rgb(1, 119, 167);
+}
+
+aside ul {
+    margin-top: 20px;
+    list-style: none;
+}
+
+aside ul li:nth-of-type(1) {
+    font-weight: 600;
+    font-size: 20px;
+    color: red;
+}
+
+aside ul li {
+    font-size: 13px;
+    margin: 3px 0;
+}
+
+aside ul li span {
+    font-weight: 100;
+    padding-left: 5px;
+    margin-left: 5px color rgb(163, 163, 163);
+}
+
+.bottom {
+    width: 1000px;
+    height: 400px;
+    margin: 10px auto;
+}
+
+.bottom ol {
+    list-style: none;
+    width: 100%;
+    height: 40px;
+    /* background-color: red; */
+}
+
+.bottom ol li:nth-of-type(1) {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 40px;
+    float: left;
+}
+
+.bottom ol li:nth-of-type(2) {
+    float: right;
+    line-height: 40px;
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+.bottom ul {
+    width: 100%;
+    /* height: 1300px; */
+    height: 350px;
+    background-color: rgb(247, 247, 247);
+    margin-bottom: 20px;
+}
+
+.bottom ul li {
+    width: 23%;
+    height: 290px;
+    background-color: rgb(255, 255, 255);
+    margin: 10px 10px;
+    margin-top: 20px;
+    float: left;
+    list-style: none;
+    text-align: center;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.bottom>ul>li>img {
+    width: 100%;
+    height: 130px;
+}
+
+@keyframes mack {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.bottom>ul>li:hover>img {
+    animation: mack 1.5s linear 0s infinite both;
+}
+
+.starting {
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 25px;
+    right: 0;
+    text-align: center;
+    line-height: 25px;
+    color: rgb(245, 232, 232);
+    background-color: rgb(254, 83, 65);
+    font-size: 10px;
+    z-index: 1;
+}
+
+.bottom>ul>li>h3 {
+    margin-top: 5px;
+    /* font-size: 20px; */
+    height: 50px;
+    overflow: hidden;
+}
+
+.bottom>ul>li>p {
+    margin-top: 5px;
+}
+
+.bottom>ul>li>p>.rim_b {
+    width: 40px;
+    height: 25px;
+    font-size: 10px;
+    line-height: 25px;
+    display: inline-block;
+    border: 1px solid rgb(163, 163, 163);
+    margin: 5px 6px;
+}
+
+.bottom>ul>li>h4 {
+    font-weight: 100;
+    margin-top: 5px;
+}
+
+.bottom>ul>li>h4>.colour {
+    color: red;
+}
+
+.bottom>ul>li>h5 {
+    font-weight: 100;
+    color: rgb(163, 163, 163);
+    margin: 5px;
+}
+
+.exclusive {
+    position: absolute;
+    display: block;
+    width: 70px;
+    height: 25px;
+    right: 0;
+    text-align: center;
+    line-height: 25px;
+    color: rgb(196, 169, 106);
+    background-color: rgb(251, 244, 203);
+    font-size: 10px;
+    z-index: 1;
+}
+
+.bottom>ul>li>p>.rim_g {
+    width: 40px;
+    height: 25px;
+    font-size: 10px;
+    line-height: 25px;
+    display: inline-block;
+    border: 1px solid green;
+    margin: 5px 6px;
+    color: green;
+}
+
+.bottom>ul>li>.examine_g {
+    font-weight: 100;
+    color: rgb(128, 194, 105);
+}
+
+.bottom>ul>li>.examine_r {
+    font-weight: 100;
+    color: red;
+}
