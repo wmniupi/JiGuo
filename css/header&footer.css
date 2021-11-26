@@ -112,8 +112,14 @@ footer p {
     text-align: center;
     color: #a3a3a3;
 }
+<<<<<<< HEAD
 
 /* article {
     height: 1250px;
     margin-top: 100px;
 } */
+=======
+article{
+    margin-top: 80px;
+}
+>>>>>>> 250e60e815071d030df1fd8c422531ff15134dcd

@@ -33,6 +33,14 @@ nav span {
     color: rgb(163, 163, 163);
 }
 
+nav span:hover {
+    color: red;
+}
+
+aside span:hover {
+    color: red;
+}
+
 .opt {
     color: red;
     border-bottom: 3px solid red;
@@ -171,4 +179,9 @@ aside span {
 .box>ul>li>.examine_g {
     font-weight: 100;
     color: rgb(128, 194, 105);
+}
+
+.box>ul>li>.examine_r {
+    font-weight: 100;
+    color: red;
 }

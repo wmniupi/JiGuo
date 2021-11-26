@@ -20,7 +20,7 @@ window.onload = function(){
             
             var li =document.createElement('li');
             li.innerHTML=`  
-                <span class="starting">首页</span>
+                <span class="starting">首发</span>
                 <img src="${data[i].img}" alt="">
                 <h3>${data[i].text}</h3>
                 <p>
@@ -34,11 +34,22 @@ window.onload = function(){
         }
     }
     var span = document.getElementsByTagName('span');
-    for(var i =0;i<span.length;i++){
-        // if(span[i].value=='首页'){
-        //     // this.className = exclusive
-        //     console.log(span[i]);
-        // }
-        // console.log(span[i]);
-    }
+   span[0].addEventListener('click',()=>{
+    window.location.href = '../user/tryout.html'
+})
+ span[1].addEventListener('click',()=>{
+        window.location.href = '../user/user02.html'
+    })
+span[2].addEventListener('click',()=>{
+    window.location.href = '../user/tryout.html'
+})
+span[3].addEventListener('click',()=>{
+    window.location.href = './user03.html'
+})
+span[4].addEventListener('click',()=>{
+    window.location.href = './user04.html'
+})
+span[5].addEventListener('click',()=>{
+    window.location.href = './user05.html'
+})
 }
