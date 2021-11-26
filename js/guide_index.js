@@ -39,7 +39,7 @@ window.addEventListener('load',function(){
                 if(ajax_.status == 200){
                     var res = JSON.parse(ajax_.responseText);
                     // console.log(res);
-                    showdata(res);
+                    showdata(res.reverse());
                 }
             }
         }
