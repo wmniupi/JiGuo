@@ -13,7 +13,7 @@
     const btn_new = document.getElementById('btn_new');
     const btn_hot = document.getElementById('btn_hot');
     btn_new.addEventListener('click',function(){
-        this.className = 'nav';
+        this.className = 'n';
         btn_hot.className = '';
         let ajax_ = new XMLHttpRequest() || new ActiveXObject('Microsoft.XMLHTTP');
         ajax_.open('get','http://192.168.31.5:3000/report/new',true);
@@ -29,7 +29,7 @@
         }
     });
     btn_hot.addEventListener('click',function(){
-        this.className = 'nav';
+        this.className = 'n';
         btn_new.className = '';
         let ajax_ = new XMLHttpRequest() || new ActiveXObject('Microsoft.XMLHTTP');
         ajax_.open('get','http://192.168.31.5:3000/report/hot',true);
@@ -63,9 +63,9 @@
             str += '<li>';
             str += '<div><img src="'+v[i].img+'"/>';
             str += '<div>'+v[i].text;
-            str += '<span><img src="../../img/tx.jpg" alt="">'+v[i].endTime+'</span>';
-            str += '<span><img src="../../img/zan.png" alt="">'+v[i].totalnum;
-            str += '<img src="../../img/reply.png" alt="">'+v[i].apply+'</span>';
+            str += '<span><img src="../img/tx.jpg" alt="">'+v[i].endTime+'</span>';
+            str += '<span><img src="../img/zan.png" alt="">'+v[i].totalnum;
+            str += '<img src="../img/reply.png" alt="">'+v[i].apply+'</span>';
             str += '</div></div>';
             str += '<div>关于此产品还有'+v[i].num+'篇报告，点击查看</div>'; 
         }
@@ -76,14 +76,14 @@
         for(var li of ul.children){
             // console.log(li);
             li.addEventListener('click',function(){
-                window.location.href = '../guide/guide_detail.html';
+                window.location.href = './guide_detail.html';
             })
         }
-        more_.children[0].innerHTML = '<img src="../../img/more.png"/>&nbsp;&nbsp;点击加载更多';
+        more_.children[0].innerHTML = '<img src="../img/more.png"/>&nbsp;&nbsp;点击加载更多';
         more_.children[0].addEventListener('click',function(){
             if(bool){
                 bool=false;
-                this.innerHTML = '<img src="../../img/loading-icon.gif"/>&nbsp;&nbsp;正在加载中';
+                this.innerHTML = '<img src="../img/loading-icon.gif"/>&nbsp;&nbsp;正在加载中';
                 clearTimeout(timer);
                 var timer = setTimeout(function(){
                     more_.children[0].innerHTML = '到底了~~';
@@ -104,7 +104,7 @@
                     for(var li of ul.children){
                         // console.log(li);
                         li.addEventListener('click',function(){
-                            window.location.href = '../guide/guide_detail.html';
+                            window.location.href = './guide_detail.html';
                         })
                     }
                 },1500)
