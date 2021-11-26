@@ -115,7 +115,7 @@ window.addEventListener('load', function () {
             if (ajax3.status == 200) {
                 let data = JSON.parse(ajax3.responseText);
                 console.log(data[0]);
-                showdata3(data[0]);
+                showdata3(data[0].reverse());
             }
         }
     }
