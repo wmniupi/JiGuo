@@ -13,6 +13,7 @@ body{
 ul{list-style: none;}
 main{
     margin-top: 80px;
+    overflow: auto;
 }
 main>#header{
     width: 100%;
