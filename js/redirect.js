@@ -26,5 +26,26 @@ window.addEventListener('load', function () {
         window.location.href = '../czj/register.html';
     })
 
+    let list = document.querySelector('.list_container');
+    // console.log(list.children[2]);
+    for(var i = 1; i<list.children[2].children.length;i++){
+        // console.log(list.children[2].children[i]);
+        list.children[2].children[i].addEventListener('click',function(){
+            window.location.href = '../czj/trial.html';
+        })
+    }
+    for(var i = 1; i<3;i++){
+        // console.log(list.children[2].children[i]);
+        list.children[5].children[i].addEventListener('click',function(){
+            window.location.href = '../czj/aboutjiguo.html';
+        })
+    }
+    list.children[5].children[3].addEventListener('click',function(){
+        window.location.href = 'mailto:BD@jiguo.com';
+    })
+    list.children[5].children[4].addEventListener('click',function(){
+        window.location.href = 'mailto:CEO@jiguo.com';
+    })
+    
 
 })
