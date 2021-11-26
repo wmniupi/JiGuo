@@ -165,3 +165,6 @@
     background-color: rgb(247,247,247);
     overflow: auto;
 }
+article{
+    margin-top: 80px;
+}

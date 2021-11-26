@@ -1,6 +1,7 @@
 article{
     overflow: auto;
     background-color: rgb(247,247,247);
+    margin-top: 80px;
 }
 
 .register_container{

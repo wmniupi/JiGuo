@@ -1,11 +1,11 @@
 window.addEventListener('load', function () {
     let ul = document.querySelector('.nav');
-    for(var i = 0; i<ul.children.length; i++){
-        ul.children[i].setAttribute('index',i);
-        ul.children[i].addEventListener('click',function(){
+    for (var i = 0; i < ul.children.length; i++) {
+        ul.children[i].setAttribute('index', i);
+        ul.children[i].addEventListener('click', function () {
             const index = this.getAttribute('index');
             // console.log(index);
-            switch(index){
+            switch (index) {
                 case '0':
                     window.location.href = '../czj/index.html';
                     break;
@@ -22,9 +22,9 @@ window.addEventListener('load', function () {
             }
         })
     }
-    document.querySelector('.registerbtn').addEventListener('click',function(){
+    document.querySelector('.registerbtn').addEventListener('click', function () {
         window.location.href = '../czj/register.html';
     })
-    
+
 
 })
