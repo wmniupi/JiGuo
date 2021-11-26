@@ -58,7 +58,7 @@ window.addEventListener('load', function () {
     let applyfor = document.querySelector('.applyfor');
     let person = document.querySelector('.person');
     let machine = document.querySelector('.machine');
-
+    let coldplay_content = document.querySelector('.coldplay_content');
     let personnum = 132;
     let machinenum = 20;
     applyfor.addEventListener('click', function () {
@@ -75,4 +75,123 @@ window.addEventListener('load', function () {
         }
     })
 
+    /* 接口地址 
+    http://192.168.31.5:3000/useing/master
+    http://192.168.31.5:3000/report/hot 
+    http://192.168.31.5:3000/guid/hot
+    http://192.168.31.5:3000/play/hot
+
+   */
+
+    let ajax = new XMLHttpRequest();
+    let report_content = document.querySelector('.report_content');
+    let guide_content = document.querySelector('.guide_content');
+    ajax.open('get', 'http://192.168.31.5:3000/report/hot');
+    ajax.send();
+    ajax.onreadystatechange = function () {
+        if (ajax.readyState == 4) {
+            if (ajax.status == 200) {
+                let data = JSON.parse(ajax.responseText);
+                showdata1(data);
+            }
+        }
+    }
+    let ajax2 = new XMLHttpRequest();
+    ajax2.open('get', 'http://192.168.31.5:3000/guid/hot');
+    ajax2.send();
+    ajax2.onreadystatechange = function () {
+        if (ajax2.readyState == 4) {
+            if (ajax2.status == 200) {
+                let data = JSON.parse(ajax2.responseText);
+                showdata2(data);
+            }
+        }
+    }
+    let ajax3 = new XMLHttpRequest();
+    ajax3.open('get', 'http://192.168.31.5:3000/play/hot');
+    ajax3.send();
+    ajax3.onreadystatechange = function () {
+        if (ajax3.readyState == 4) {
+            if (ajax3.status == 200) {
+                let data = JSON.parse(ajax3.responseText);
+                console.log(data[0]);
+                showdata3(data[0]);
+            }
+        }
+    }
+    function showdata1(data) {
+        /*  console.log(data); */
+        let str = '';
+        for (let i = 0; i < 8; i++) {
+            str += `
+                <div class="report_content_element">
+                    <img src="${data[i].img}" width="220px" height="130px">
+                    <p>${data[i].text}</p>
+                    <div>
+                        <span>${data[i].uName}</span>
+                        <div class="thumbs">
+                            <img src="../img/zan.png" alt="">3
+                            <img src="../img/reply.png" alt="">3
+                        </div>
+                    </div>
+                </div>
+            `
+        }
+        report_content.innerHTML = str;
+    }
+    function showdata2(data) {
+        /*  console.log(data); */
+        let str = '';
+        for (let i = 0; i < 4; i++) {
+            str += `
+                <div class="guide_content_element">
+                    <div></div>
+                    <div></div>
+                    <div>
+                        <img src="${data[i].img}" alt="">
+                        <span>${data[i].text}</span>
+                        <div>
+                            <span><img src="../img/xin.png" alt="">${data[i].like}</span>
+                            <span><img src="../img/reply.png" alt="">${data[i].words}</span>
+                        </div>
+                    </div>
+                </div>
+            `
+        }
+        guide_content.innerHTML = str;
+    }
+    function showdata3(data) {
+        /*  console.log(data); */
+        let str = '';
+        for (let i = 0; i < 8; i++) {
+            str += `
+               <div class="coldplay_content_element">
+                    <img src="${data[i].img}" width="220px" height="130px">
+                    <p>${data[i].text}</p>
+                    <p>${data[i].description}</p>
+                    <div>
+                        <span>￥${data[i].price}</span>
+                        <div class="thumbs">
+                            <img src="../img/zan.png" alt="">3
+                            <img src="../img/reply.png" alt="">3
+                        </div>
+                    </div>
+                </div>
+            `
+        }
+        str += str;
+        coldplay_content.innerHTML = str;
+    }
+
+    let moreimg = document.querySelector('.moreimg');
+    let loadimg = document.querySelector('.loadimg');
+
+    moreimg.addEventListener('click', function () {
+        moreimg.style.display = 'none';
+        loadimg.style.display = 'block';
+    })
+    loadimg.addEventListener('click', function () {
+        loadimg.style.display = 'none';
+        moreimg.style.display = 'block';
+    })
 })
