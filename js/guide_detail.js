@@ -22,19 +22,9 @@ window.addEventListener('load',function(){
         }
         
     })
-    var bool2 = true;
     share.addEventListener('click',function(){
-        if(bool2){
-            bool2 = false;
-            this.children[0].src='../../img/shareh_yj1.png';
-            this.style.color = '#fe5431'
-            this.childNodes[2].nodeValue = '已分享';
-        }else{
-            bool2 = true;
-            this.children[0].src='../../img/share_yj1.png';
-            this.style.color = '#ababab';
-            this.childNodes[2].nodeValue = '分享';
-        }
-        
+        this.children[0].src='../../img/shareh_yj1.png';
+        this.style.color = '#fe5431'
+        this.childNodes[2].nodeValue = '已分享';        
     })
 })
