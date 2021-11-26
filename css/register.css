@@ -1,0 +1,72 @@
+article{
+    overflow: auto;
+    background-color: rgb(247,247,247);
+}
+
+.register_container{
+    width: 1000px;
+    margin: 30px auto;
+    padding: 20px 0;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.register_container h2{
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 20px;
+    border-left: 5px solid rgb(254,83,65);
+}
+.imformation{
+    width: 60%;
+    margin: 60px auto;
+    text-align: center;
+}
+.imformation input {
+    height: 50px;
+    background-color: rgb(247,247,247);
+    border:0;
+    border-radius: 10px;
+    margin: 15px 0;
+    padding: 5px 10px;
+    font-size: 17px;
+    box-sizing: border-box;
+}
+
+#phone_number,#username,#password,#confirmpwd{
+    width: 400px;
+}
+#check_code{
+    width: 240px;
+}
+#postcodebtn{
+    height: 50px;
+    margin-left: 12px;
+    width: 140px;
+    border: 1px solid #a3a3a3;
+    border-radius: 10px;
+    color: #a3a3a3;
+    background-color: white;
+    cursor: pointer;
+}
+#identifying_code{
+    width: 240px;
+    margin-right: 12px;
+}
+.imgCode{
+    width: 140px;
+    height: 50px;
+    margin: 20px 0;
+    vertical-align:middle
+}
+#registerbtn{
+    width: 400px;
+    height: 50px;
+    border: 0;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: rgb(254,83,65);
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
