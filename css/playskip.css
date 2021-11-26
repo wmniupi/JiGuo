@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.focusimg {
+    margin-top: 70px;
+    height: 300px;
+    background-image: url(../img/original.jpg);
+    background-size: cover;
+    background-position: -200px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.font_container {
+    position: absolute;
+    top: 40px;
+    right: 260px;
+    text-align: right;
+
+    animation: focusfont 1s forwards;
+}
+
+@keyframes focusfont {
+    from {
+        transform: translate(500px, -500px);
+    }
+
+    to {
+        transform: translate(0, 0);
+    }
+}
+
+.font_container h2 {
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.font_container span {
+    padding: 5px 10px;
+    margin: 10px 6px;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 32px;
+    display: inline-block;
+    background-color: rgba(248, 248, 248, 0.3);
+}
+
+.font_container p {
+    font-size: 20px;
+}
+
+.font_container button {
+    width: 250px;
+    height: 50px;
+    background-color: #fe5341;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    border: 0;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(240, 240, 240);
+}
+
+nav ul {
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+nav ul h2 {
+    width: 50px;
+    height: 80%;
+    font-weight: 600;
+}
