@@ -10,11 +10,13 @@ window.addEventListener('load', function () {
                     window.location.href = '../czj/index.html';
                     break;
                 case '1':
+                    window.location.href = '../wm/coldplay.html';
                     break;
                 case '2':
                     window.location.href = '../jbf/guide_index.html';
                     break;
                 case '3':
+                    window.location.href = '../wm/tryout.html';
                     break;
                 case '4':
                     window.location.href = '../jbf/report_index.html';
