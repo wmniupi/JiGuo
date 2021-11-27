@@ -24,26 +24,45 @@ window.addEventListener('load', function () {
     /* 密码(以字母开头，长度在6~18之间，只能包含字母、数字和下划线)：^[a-zA-Z]\w{5,17}$ */
     let reg_pwd = /^[a-zA-Z]\w{5,17}$/;
 
-    let flag = 0;
+    let flag1 = 0;
+    let flag2 = 0;
+    let flag3 = 0;
+    let flag4 = 0;
+    let flag5 = 0;
+    let flag6 = 0;
+
+    if (flag1 == 0) {
+        postcodebtn.style.border = '1px solid #a3a3a3';
+        postcodebtn.style.color = '#a3a3a3';
+        postcodebtn.disabled = 'true';
+    }
 
     phone_number.addEventListener('blur', function () {
         if (!reg_tel.test(phone_number.value)) {
             phone_number.style.border = '1px solid red';
             p1.style.opacity = '1';
+            flag1 = 0;
+            postcodebtn.style.border = '1px solid #a3a3a3';
+            postcodebtn.style.color = '#a3a3a3';
+            postcodebtn.disabled = 'true';
         } else {
             phone_number.style.border = '';
             p1.style.opacity = '0';
-            flag++;
+            flag1++;
+            postcodebtn.style.color = 'rgb(254,83,65)';
+            postcodebtn.disabled = '';
+            postcodebtn.style.border = '1px solid rgb(254,83,65)';
         }
     })
     check_code.addEventListener('blur', function () {
         if (check_code.value != 'wmnb') {
             check_code.style.border = '1px solid red';
             p2.style.opacity = '1';
+            flag2 = 0;
         } else {
             check_code.style.border = '';
             p2.style.opacity = '0';
-            flag++;
+            flag2++;
         }
     })
     postcodebtn.addEventListener('click', function () {
@@ -66,47 +85,51 @@ window.addEventListener('load', function () {
         }, 1000);
     })
     identifying_code.addEventListener('blur', function () {
-        if (identifying_code.value != 'r2B7') {
+        if (identifying_code.value.toUpperCase() != 'R2B7') {
             identifying_code.style.border = '1px solid red';
             p3.style.opacity = '1';
+            flag3 = 0;
         } else {
             identifying_code.style.border = '';
             p3.style.opacity = '0';
-            flag++;
+            flag3++;
         }
     })
     username.addEventListener('blur', function () {
         if (!reg_user.test(username.value)) {
             username.style.border = '1px solid red';
             p4.style.opacity = '1';
+            flag4 = 0;
         } else {
             username.style.border = '';
             p4.style.opacity = '0';
-            flag++;
+            flag4++;
         }
     })
     password.addEventListener('blur', function () {
         if (!reg_pwd.test(password.value)) {
             password.style.border = '1px solid red';
             p5.style.opacity = '1';
+            flag5 = 0;
         } else {
             password.style.border = '';
             p5.style.opacity = '0';
-            flag++;
+            flag5++;
         }
     })
     confirmpwd.addEventListener('blur', function () {
         if (password.value != confirmpwd.value) {
             confirmpwd.style.border = '1px solid red';
             p6.style.opacity = '1';
+            flag6 = 0;
         } else {
             confirmpwd.style.border = '';
             p6.style.opacity = '0';
-            flag++;
+            flag6++;
         }
     })
     registerbtn.addEventListener('click', function () {
-        if (flag == 6) {
+        if (flag1 && flag2 && flag3 && flag4 && flag5 && flag6) {
             document.querySelector('.mask').style.display = 'flex';
         } else {
             alert('请按需求填写号表单内容！');
