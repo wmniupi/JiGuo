@@ -148,7 +148,20 @@
     margin: 5px 14px;
     cursor: pointer;
 }
-
+.scroll_element img:hover{
+    animation: mask 3s infinite;    
+}
+@keyframes mask {
+    0%{
+        opacity: .5;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: .5;
+    }
+}
 .scroll_element h2 {
     font-size: 18px;
     font-weight: 550;
@@ -220,6 +233,9 @@ article {
     margin: 10px 0;
     position: relative;
     cursor: pointer;
+}
+.report_content_element img:hover{
+    animation: mask 3s infinite;
 }
 .report_content_element p{
     font-size: 16px;
@@ -293,6 +309,9 @@ article {
     width: 100%;
     border-radius: 5px;
 }
+.guide_content_element img:hover{
+    animation: mask 3s infinite;
+}
 .guide_content_element>div>span{
     margin-left: 6px;
     text-align: left;
@@ -331,6 +350,9 @@ article {
     position: relative;
     cursor: pointer;
 
+}
+.coldplay_content_element img:hover{
+    animation: mask 3s infinite;
 }
 .coldplay_content_element p:nth-of-type(1){
     font-size: 16px;

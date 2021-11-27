@@ -1,6 +1,4 @@
 window.addEventListener('load', function () {
-
-    const flag111 = 0;
     let ul = document.querySelector('.nav');
     let flagindex = +document.querySelector('#flagindex').childNodes[0].nodeValue;
     switch (flagindex) {
@@ -45,7 +43,7 @@ window.addEventListener('load', function () {
 
     let headerlogo = document.querySelector('.headerlogo');
     headerlogo.addEventListener('click', function () {
-        window.location.href = '../czj/index.html';
+        window.location.href = '../czj/login.html';
     })
 
     for (var i = 0; i < ul.children.length; i++) {
@@ -72,9 +70,9 @@ window.addEventListener('load', function () {
             }
         })
     }
-    function fn(index){
+    function fn(index) {
         let ul2 = document.querySelector('.nav');
-        for(var i = 0; i < ul2.children.length; i++){
+        for (var i = 0; i < ul2.children.length; i++) {
             ul2.children[i].children[0].style.color = 'black';
         }
         ul2.children[index].children[0].style.color = '#fe5341';
