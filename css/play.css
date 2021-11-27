@@ -53,6 +53,8 @@ nav span {
     float: left;
     list-style: none;
     text-align: left;
+    border-radius: 15px;
+    overflow: hidden;
 }
 
 .box>ul>li>img {

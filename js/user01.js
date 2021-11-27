@@ -32,6 +32,12 @@ window.onload = function(){
             `
             ul.appendChild(li);
         }
+        var li = document.getElementsByTagName('li');
+        for(var i=5;i<li.length;i++){
+        li[i].onclick = function(){
+        window.location.href = './playskip.html'
+    }
+    }
     }
     var span = document.getElementsByTagName('span');
    span[0].addEventListener('click',()=>{
@@ -52,10 +58,5 @@ span[4].addEventListener('click',()=>{
 span[5].addEventListener('click',()=>{
     window.location.href = './user05.html'
 })
-var li = document.getElementsByTagName('li');
-for(var i=0;i<li.length;i++){
-    li[i].onclick = function(){
-        window.location.href = './playskip.html'
-    }
-}
+
 }

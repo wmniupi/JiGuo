@@ -1,4 +1,6 @@
 window.addEventListener('load', function () {
+
+    const flag111 = 0;
     let ul = document.querySelector('.nav');
     let flagindex = +document.querySelector('#flagindex').childNodes[0].nodeValue;
     switch (flagindex) {
@@ -69,6 +71,13 @@ window.addEventListener('load', function () {
                     break;
             }
         })
+    }
+    function fn(index){
+        let ul2 = document.querySelector('.nav');
+        for(var i = 0; i < ul2.children.length; i++){
+            ul2.children[i].children[0].style.color = 'black';
+        }
+        ul2.children[index].children[0].style.color = '#fe5341';
     }
     document.querySelector('.registerbtn').addEventListener('click', function () {
         window.location.href = '../czj/register.html';
