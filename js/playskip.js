@@ -1,4 +1,4 @@
- window.onload = function(){
+ window.addEventListener('load',function(){
 /* 焦点图倒计时  */
     let dayspan = document.querySelector('.day');
     let hourspan = document.querySelector('.hour');
@@ -39,5 +39,5 @@
 
         }
     })
- }
+ })
  
