@@ -76,6 +76,8 @@ aside span {
     list-style: none;
     text-align: center;
     position: relative;
+    border-radius: 15px;
+    overflow: hidden;
 }
 
 .box>ul>li>img {
